@@ -6,13 +6,13 @@
 /*   By: syun <syun@student.42seoul.kr>             +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/10/26 16:03:39 by syun              #+#    #+#             */
-/*   Updated: 2021/10/26 18:02:05 by syun             ###   ########.fr       */
+/*   Updated: 2021/10/26 21:01:00 by syun             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include <stdlib.h>
 
-char	*ft_strcat(char *dest, char *src)
+char	*ft_strcpy(char *dest, char *src)
 {
 	while (*src)
 	{
@@ -35,9 +35,9 @@ long long	ft_strlen(char *str)
 
 char	*ft_strjoin(int size, char **strs, char *sep)
 {
-	int	i;
-	char	*temp;
-	char	result;
+	int			i;
+	char		*temp;
+	char		*result;
 	long long	strs_len;
 
 	if (size <= 0)
@@ -55,8 +55,8 @@ char	*ft_strjoin(int size, char **strs, char *sep)
 	i = 1;
 	while (i < size)
 	{
-		temp = ft_strcat(temp, sep);
-		temp = ft_strcat(temp, strs[i++]);
+		temp = ft_strcopy(temp, sep);
+		temp = ft_strcopy(temp, strs[i++]);
 	}
 	*temp = 0;
 	return (result);

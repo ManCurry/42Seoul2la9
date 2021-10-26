@@ -6,7 +6,7 @@
 /*   By: syun <syun@student.42seoul.kr>             +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/10/26 15:35:46 by syun              #+#    #+#             */
-/*   Updated: 2021/10/26 15:47:40 by syun             ###   ########.fr       */
+/*   Updated: 2021/10/26 20:13:28 by syun             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -22,11 +22,11 @@ int	ft_strlen(char *str)
 	return (i);
 }
 
-char	*ft_stdup(char *src)
+char	*ft_strdup(char *src)
 {
 	char	*dest;
-	int	len;
-	int	i;
+	int		len;
+	int		i;
 
 	len = ft_strlen(src);
 	dest = (char *)malloc(sizeof(char) * (len + 1));
