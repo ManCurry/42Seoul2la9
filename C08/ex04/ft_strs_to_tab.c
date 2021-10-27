@@ -6,7 +6,7 @@
 /*   By: syun <syun@student.42seoul.kr>             +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/10/26 15:16:50 by syun              #+#    #+#             */
-/*   Updated: 2021/10/26 15:16:53 by syun             ###   ########.fr       */
+/*   Updated: 2021/10/27 16:05:51 by syun             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -62,4 +62,5 @@ struct	s_stock_str	*ft_strs_to_tab(int ac, char **av)
 		i++;
 	}
 	arr[i] = (struct s_stock_str){0, 0, 0};
-	r
+	return (arr);
+}

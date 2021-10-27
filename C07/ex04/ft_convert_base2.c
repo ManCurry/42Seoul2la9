@@ -1,43 +1,13 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_strdup.c                                        :+:      :+:    :+:   */
+/*   ft_convert_base2.c                                 :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: syun <syun@student.42seoul.kr>             +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2021/10/26 15:35:46 by syun              #+#    #+#             */
-/*   Updated: 2021/10/27 09:26:07 by syun             ###   ########.fr       */
+/*   Created: 2021/10/27 10:15:50 by syun              #+#    #+#             */
+/*   Updated: 2021/10/27 10:15:51 by syun             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <stdlib.h>
 
-int	ft_strlen(char *str)
-{
-	int	i;
-
-	i = 0;
-	while (str[i])
-		i++;
-	return (i);
-}
-
-char	*ft_strdup(char *src)
-{
-	char	*dest;
-	int		len;
-	int		i;
-
-	len = ft_strlen(src);
-	dest = (char *)malloc(sizeof(char) * (len + 1));
-	if (dest == 0)
-		return (0);
-	i = 0;
-	while (src[i])
-	{
-		dest[i] = src[i];
-		i++;
-	}
-	dest[i] = '\0';
-	return (dest);
-}

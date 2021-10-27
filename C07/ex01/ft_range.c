@@ -6,16 +6,16 @@
 /*   By: syun <syun@student.42seoul.kr>             +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/10/26 15:48:58 by syun              #+#    #+#             */
-/*   Updated: 2021/10/26 20:22:11 by syun             ###   ########.fr       */
+/*   Updated: 2021/10/27 09:29:45 by syun             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <stlib.h>
+#include <stdlib.h>
 
 int	*ft_range(int min, int max)
 {
-	int *numptr;
-	int i;
+	int	*numptr;
+	int	i;
 
 	if (max <= min)
 		return (NULL);
